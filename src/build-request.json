@@ -1,0 +1,160 @@
+{
+  "kind": "build_request",
+  "title": "Create HAND FOR ALL (HOF) landing page hero/header with project overview and contact info",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Build a responsive landing page header/hero section for the “HAND FOR ALL” project using the provided copy: brand name “HAND FOR ALL”, logo text “HOF - Hand For All”, main title “Prosthetic Hand Using Soft Robots”, and tagline “Innovating Human Capability with Soft Robotics”.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Organization/Brand Name: HAND FOR ALL\nLogo Text: HOF - Hand For All\nMain Title: Prosthetic Hand Using Soft Robots\nTagline: Innovating Human Capability with Soft Robotics"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The page renders the brand name and logo text prominently at the top of the hero/header area.",
+        "The hero includes the exact main title and tagline text with correct capitalization.",
+        "Layout is responsive (mobile/desktop) without overlapping or clipped content."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Add a “Key Features” section displaying the six provided feature items and their descriptions: Natural Movement, Ergonomics, Mechanism, Customization, Impact, Tech Stack (Arduino).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Key Features\nNatural Movement: Soft robotic actuators for natural movement.\nErgonomics: Easy-to-carry, comfortable shape.\nMechanism: Soft robotic hand using air pump.\nCustomization: Affordable & fully customizable.\nImpact: Helps individuals with hand loss or impairment.\nTech Stack: Accessible using Arduino."
+        ]
+      },
+      "acceptanceCriteria": [
+        "All six feature titles and descriptions are visible and readable on dark background.",
+        "Feature content matches the provided text verbatim (English).",
+        "On mobile, features stack in a single column; on larger screens they use a multi-column/grid layout."
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Add a “How It Works” section containing the provided explanation of the air pump + silicone tubes + Arduino control.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "How It Works\nAn air pump directs airflow into silicone tubes, causing them to expand and thereby facilitating the movement and bending of fingers. The air pressure and movement are precisely controlled using an Arduino system, allowing for the manipulation of finger angles with accuracy."
+        ]
+      },
+      "acceptanceCriteria": [
+        "The section title “How It Works” is present.",
+        "The paragraph text is included verbatim and is readable with adequate line length/spacing.",
+        "Section is visually distinct from the hero and key features sections (spacing and/or subtle separators)."
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Add an “Applications” section listing: Medical Rehab, Assistive Tech, and R&D (Research and Development).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Applications\nMedical Rehab\nAssistive Tech\nR&D (Research and Development)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All three application items are displayed as a list or cards.",
+        "Text matches exactly, including the “R&D (Research and Development)” formatting."
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Add a “Contact” section showing the team contact email and both phone numbers exactly as provided.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Contact Information\nTeam Contact Email: Shubhamjrd@gmail.com\nPhone Numbers:\n+91 7357473326\n+91 9468086676"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Email “Shubhamjrd@gmail.com” is displayed and uses a mailto link.",
+        "Both phone numbers are displayed and use tel links.",
+        "Contact section is readable on dark background and accessible (proper labels, sufficient contrast)."
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Apply a consistent visual design across the landing page using the specified palette: dark charcoal/black background, white text, and light blue/cyan accents; choose a coherent typography and layout style that fits a modern soft-robotics/engineering theme (no blue/purple-dominant theme).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Color Palette: Dark charcoal/black background with white text and light blue/cyan accents."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Background is dark charcoal/black; primary text is white; accents are light blue/cyan.",
+        "Buttons/links (if present) and section headings use the accent color consistently.",
+        "All text meets reasonable contrast for readability on the dark background."
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Add the specified visual elements to the page using generated static images: (1) hero imagery (3D wireframe/render of a translucent blue prosthetic hand showing internal tubing), (2) use-case illustration (man in a workshop struggling to lift a box with one hand), and (3) component detail (photo-like image of physical prototype with silicone hand connected to an air pump and wiring). Store and serve these as static assets from frontend/public/assets/generated and reference them directly from the frontend (no backend image serving).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Visual Elements (For Web Design)\nHero Imagery: A 3D wireframe/render of a translucent blue prosthetic hand showing internal tubing.\nUse-Case Illustration: A graphic of a man in a workshop setting, struggling to lift a box with one hand, highlighting the need for assistive technology.\nComponent Detail: A photograph of the physical prototype, showing the silicone hand connected to an air pump and wiring."
+        ]
+      },
+      "acceptanceCriteria": [
+        "All three images are present on the page in appropriate sections (hero and supporting sections).",
+        "Images are loaded from frontend/public/assets/generated via static paths and do not require backend calls.",
+        "Images are responsive (scale down on mobile without distortion) and include descriptive alt text in English."
+      ]
+    }
+  ],
+  "constraints": [
+    "Use English for any user-facing text.",
+    "Do not edit files under frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, or any sources under frontend/src/components/ui (compose these components instead).",
+    "Backend must remain single-actor (Motoko) if any backend changes are introduced; however, this request should be implementable as frontend-only."
+  ],
+  "nonGoals": [
+    "Do not implement a contact form submission or email/phone verification.",
+    "Do not add third-party authentication providers (only Internet Identity is supported, and it is not required for this landing page).",
+    "Do not add real-time features (websockets/chat) or external databases/integrations."
+  ],
+  "imageRequirements": {
+    "required": [
+      "3D wireframe/render of a translucent cyan-blue prosthetic hand showing internal tubing on a dark background (hof-hero-hand.dim_1600x900.png)",
+      "Workshop illustration of a man struggling to lift a box with one hand; industrial workshop environment; dark tone with cyan highlights (hof-usecase-workshop.dim_1400x900.png)",
+      "Photo-like prototype detail: silicone prosthetic hand connected to an air pump with visible tubing and wiring on a neutral/dark surface (hof-prototype-detail.dim_1400x900.png)"
+    ],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

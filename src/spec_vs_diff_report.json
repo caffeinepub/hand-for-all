@@ -1,0 +1,95 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-09T23:14:35.319Z",
+  "summary": "Diff adds a new landing-page style App with hero header and one required hero image reference, plus introduces Internet Identity/react-query hooks and a stub backend actor. Due to truncation, several requested sections (features details, how-it-works copy, applications list, contact details, and the other two required images) cannot be verified from the provided diff summary.",
+  "missing_requirements": [
+    {
+      "id": "REQ-2",
+      "requirement": "Add a “Key Features” section displaying the six provided feature items and their descriptions verbatim; responsive single-column on mobile and grid on larger screens.",
+      "reason": "The diff shows the start of a “Key Features” section and a grid container, but the actual six feature items and their verbatim descriptions are truncated, so implementation cannot be confirmed.",
+      "evidence": [
+        "frontend/src/App.tsx (truncated)"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "requirement": "Add a “How It Works” section containing the provided explanation text verbatim and visually distinct from other sections.",
+      "reason": "No visible evidence of the “How It Works” section title or the required paragraph text in the provided (truncated) App.tsx excerpt.",
+      "evidence": [
+        "frontend/src/App.tsx (truncated)"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "requirement": "Add an “Applications” section listing Medical Rehab, Assistive Tech, and R&D (Research and Development) exactly.",
+      "reason": "No visible evidence of an “Applications” section or the three required items in the provided (truncated) App.tsx excerpt.",
+      "evidence": [
+        "frontend/src/App.tsx (truncated)"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "requirement": "Add a “Contact” section showing email (mailto) and both phone numbers (tel) exactly as provided.",
+      "reason": "The provided diff excerpt does not show the contact section contents (email/phone values and mailto/tel links), so correctness cannot be confirmed.",
+      "evidence": [
+        "frontend/src/App.tsx (truncated)"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "requirement": "Add all three specified generated static images from frontend/public/assets/generated and include descriptive English alt text; images should appear in appropriate sections.",
+      "reason": "Only the hero image path and alt text are shown. There is no evidence for the other two required images (workshop use-case and prototype detail) or that they are stored under frontend/public/assets/generated.",
+      "evidence": [
+        "frontend/src/App.tsx (truncated)"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Added a backend Motoko canister stub (single actor) even though the request was intended to be frontend-only and did not request backend changes.",
+      "reason": "BuildRequest states the landing page should be implementable as frontend-only; backend changes were not requested.",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    },
+    {
+      "description": "Introduced/added Internet Identity authentication provider code and an actor hook using react-query.",
+      "reason": "The landing page requirements do not ask for authentication flows or actor/query infrastructure; Internet Identity is explicitly 'not required for this landing page'.",
+      "evidence": [
+        "frontend/src/hooks/useInternetIdentity.ts",
+        "frontend/src/hooks/useActor.ts",
+        "frontend/src/main.tsx"
+      ]
+    },
+    {
+      "description": "Added navigation CTAs/buttons ('Contact Us', 'Explore Features', 'How It Works') not explicitly requested.",
+      "reason": "The BuildRequest does not request CTAs/buttons; only sections/content and contact info display were required.",
+      "evidence": [
+        "frontend/src/App.tsx (truncated)"
+      ]
+    },
+    {
+      "description": "Added extra hero badge text 'Soft Robotics Innovation' not part of the provided required copy.",
+      "reason": "REQ-1 specifies exact provided copy elements for the hero/header; additional marketing copy was not requested.",
+      "evidence": [
+        "frontend/src/App.tsx (truncated)"
+      ]
+    }
+  ],
+  "confidence": 0.62,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

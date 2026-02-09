@@ -1,0 +1,143 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "HAND FOR ALL (HOF) landing page hero/header with sections and static imagery",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Create a responsive hero/header that prominently displays the HAND FOR ALL brand, logo text, main title, and tagline.",
+      "acceptanceCriteria": [
+        "The page renders the brand name and logo text prominently at the top of the hero/header area.",
+        "The hero includes the exact main title and tagline text with correct capitalization.",
+        "Layout is responsive (mobile/desktop) without overlapping or clipped content."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "create",
+          "description": "Create the landing page layout and hero/header content with the exact copy: “HAND FOR ALL”, “HOF - Hand For All”, “Prosthetic Hand Using Soft Robots”, and “Innovating Human Capability with Soft Robotics”. Use shadcn-ui layout primitives (e.g., Card where appropriate) to keep typography and spacing consistent. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Ensure the app loads in dark mode by default (e.g., applying a dark class on the root element) so the hero/header renders with the intended dark background/white text palette."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Add a Key Features section with six feature items and descriptions, responsive from single-column to grid layout.",
+      "acceptanceCriteria": [
+        "All six feature titles and descriptions are visible and readable on dark background.",
+        "Feature content matches the provided text verbatim (English).",
+        "On mobile, features stack in a single column; on larger screens they use a multi-column/grid layout."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add a “Key Features” section containing all six items verbatim: Natural Movement, Ergonomics, Mechanism, Customization, Impact, Tech Stack (Arduino). Use shadcn-ui Card components to present each feature as a readable card on a dark background. Verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Add a visually distinct How It Works section with the provided explanation text.",
+      "acceptanceCriteria": [
+        "The section title “How It Works” is present.",
+        "The paragraph text is included verbatim and is readable with adequate line length/spacing.",
+        "Section is visually distinct from the hero and key features sections (spacing and/or subtle separators)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add a “How It Works” section with the provided paragraph verbatim, using layout spacing and subtle separators (e.g., section padding, divider styles) to make it distinct from adjacent sections."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Add an Applications section listing the three provided application areas.",
+      "acceptanceCriteria": [
+        "All three application items are displayed as a list or cards.",
+        "Text matches exactly, including the “R&D (Research and Development)” formatting."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add an “Applications” section displaying the three items exactly: Medical Rehab, Assistive Tech, and R&D (Research and Development). Use shadcn-ui Card components or a styled list to keep visual consistency. Verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Add a Contact section that displays the provided email and phone numbers as accessible mailto/tel links.",
+      "acceptanceCriteria": [
+        "Email “Shubhamjrd@gmail.com” is displayed and uses a mailto link.",
+        "Both phone numbers are displayed and use tel links.",
+        "Contact section is readable on dark background and accessible (proper labels, sufficient contrast)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add a “Contact” section showing “Shubhamjrd@gmail.com” as a mailto link and +91 7357473326 / +91 9468086676 as tel links, with clear labels and adequate contrast on the dark background."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Apply a consistent modern soft-robotics/engineering visual design using dark background, white text, and cyan accents.",
+      "acceptanceCriteria": [
+        "Background is dark charcoal/black; primary text is white; accents are light blue/cyan.",
+        "Buttons/links (if present) and section headings use the accent color consistently.",
+        "All text meets reasonable contrast for readability on the dark background."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "create",
+          "description": "Define global theme tokens/styles for a dark charcoal/black background, white foreground text, and cyan accent color (aligned with the Tailwind CSS variable-based theme). Ensure headings, links, and interactive states consistently use the cyan accent while preserving contrast."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Ensure all landing page sections use a consistent typography scale, spacing system, and cyan accent styling for headings/links (no blue/purple-dominant theme), keeping readability on the dark background."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Add three generated static images to appropriate sections and reference them via static paths with responsive behavior and descriptive alt text.",
+      "acceptanceCriteria": [
+        "All three images are present on the page in appropriate sections (hero and supporting sections).",
+        "Images are loaded from frontend/public/assets/generated via static paths and do not require backend calls.",
+        "Images are responsive (scale down on mobile without distortion) and include descriptive alt text in English."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/hof-hero-hand.dim_1600x900.png",
+          "operation": "create",
+          "description": "Add the generated hero image asset (3D wireframe/render of a translucent cyan-blue prosthetic hand showing internal tubing on a dark background) at the required static path."
+        },
+        {
+          "path": "frontend/public/assets/generated/hof-usecase-workshop.dim_1400x900.png",
+          "operation": "create",
+          "description": "Add the generated use-case illustration asset (workshop scene of a man struggling to lift a box with one hand; dark tone with cyan highlights) at the required static path."
+        },
+        {
+          "path": "frontend/public/assets/generated/hof-prototype-detail.dim_1400x900.png",
+          "operation": "create",
+          "description": "Add the generated prototype detail image asset (photo-like silicone prosthetic hand connected to an air pump with visible tubing and wiring) at the required static path."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the static images into the UI using direct references to: frontend/public/assets/generated/hof-hero-hand.dim_1600x900.png (hero), frontend/public/assets/generated/hof-usecase-workshop.dim_1400x900.png (supporting/use-case area), and frontend/public/assets/generated/hof-prototype-detail.dim_1400x900.png (How It Works or supporting detail). Ensure responsive sizing (no distortion) and provide descriptive English alt text for each image."
+        }
+      ]
+    }
+  ]
+}

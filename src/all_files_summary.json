@@ -1,0 +1,14 @@
+{
+  "backend/main.mo": "Empty Motoko actor with no methods defined.",
+  "feature_evidence.json": "Lists feature evidence reports mapping features to files, components, and test IDs.",
+  "frontend-file-summaries.txt": "Prewritten summaries describing the purpose of core frontend files.",
+  "frontend/index.css": "Tailwind base stylesheet defining OKLCH color variables and dark theme values.",
+  "frontend/index.html": "HTML root document enabling dark mode and loading the React app entry script.",
+  "frontend/src/App.tsx": "Main React component implementing the full HAND FOR ALL landing page with hero, features, how-it-works, applications, and contact sections.",
+  "frontend/src/hooks/useActor.ts": "Hook creating and updating a backend actor based on Internet Identity authentication state.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Context and provider managing Internet Identity auth client, login, logout, and identity persistence.",
+  "frontend/src/index.css": "Global Tailwind styles with OKLCH color tokens for light/dark themes and smooth scrolling.",
+  "frontend/src/main.tsx": "App entry point wiring React, Internet Identity provider, and React Query client.",
+  "frontend/tailwind.config.js": "Tailwind config enabling dark mode, OKLCH color tokens, extended fonts, radii, and UI plugins.",
+  "project_state.json": "Defines the project state for a prosthetic-hand landing page, including design requirements, required images, and feature modules. Lists sections to build such as hero, features, how-it-works, applications, and contact."
+}

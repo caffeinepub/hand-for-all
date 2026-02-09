@@ -1,0 +1,6 @@
+{
+  "frontend/src/App.tsx": "Complete landing page for HAND FOR ALL prosthetic hand project with hero section, key features grid, how-it-works explanation, applications showcase, contact section with mailto/tel links, and footer with caffeine.ai attribution.",
+  "frontend/src/index.css": "Global styles with OKLCH color system customized for dark charcoal background with cyan accent colors (hue 200) for the soft robotics theme, including smooth scroll behavior.",
+  "frontend/index.html": "HTML entry point with dark mode class applied by default and SEO meta description for the HAND FOR ALL project.",
+  "frontend/tailwind.config.js": "Tailwind configuration with Inter font family added and consistent border radius settings for the modern engineering aesthetic."
+}

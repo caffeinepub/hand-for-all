@@ -1,0 +1,133 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-build-a-responsive-landing-page-header-hero-section-for-the-hand-for-all-project-using-the-provided-copy-brand-name-hand-for-all-logo-text-hof-hand-for-all-main-title-prosthetic-hand-using-soft-robots-and-tagline-innovating-human-capability-with-soft-robotics",
+      "featureTitle": "Build a responsive landing page header/hero section for the “HAND FOR ALL” project using the provided copy: brand name “HAND FOR ALL”, logo text “HOF - Hand For All”, main title “Prosthetic Hand Using Soft Robots”, and tagline “Innovating Human Capability with Soft Robotics”.",
+      "files": [
+        "frontend/index.html",
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-key-features-section-displaying-the-six-provided-feature-items-and-their-descriptions-natural-movement-ergonomics-mechanism-customization-impact-tech-stack-arduino",
+      "featureTitle": "Add a “Key Features” section displaying the six provided feature items and their descriptions: Natural Movement, Ergonomics, Mechanism, Customization, Impact, Tech Stack (Arduino).",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-how-it-works-section-containing-the-provided-explanation-of-the-air-pump-silicone-tubes-arduino-control",
+      "featureTitle": "Add a “How It Works” section containing the provided explanation of the air pump + silicone tubes + Arduino control.",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-an-applications-section-listing-medical-rehab-assistive-tech-and-r-d-research-and-development",
+      "featureTitle": "Add an “Applications” section listing: Medical Rehab, Assistive Tech, and R&D (Research and Development).",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-contact-section-showing-the-team-contact-email-and-both-phone-numbers-exactly-as-provided",
+      "featureTitle": "Add a “Contact” section showing the team contact email and both phone numbers exactly as provided.",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-apply-a-consistent-visual-design-across-the-landing-page-using-the-specified-palette-dark-charcoal-black-background-white-text-and-light-blue-cyan-accents-choose-a-coherent-typography-and-layout-style-that-fits-a-modern-soft-robotics-engineering-theme-no-blue-purple-dominant-theme",
+      "featureTitle": "Apply a consistent visual design across the landing page using the specified palette: dark charcoal/black background, white text, and light blue/cyan accents; choose a coherent typography and layout style that fits a modern soft-robotics/engineering theme (no blue/purple-dominant theme).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-the-specified-visual-elements-to-the-page-using-generated-static-images-1-hero-imagery-3d-wireframe-render-of-a-translucent-blue-prosthetic-hand-showing-internal-tubing-2-use-case-illustration-man-in-a-workshop-struggling-to-lift-a-box-with-one-hand-and-3-component-detail-photo-like-image-of-physical-prototype-with-silicone-hand-connected-to-an-air-pump-and-wiring-store-and-serve-these-as-static-assets-from-frontend-public-assets-generated-and-reference-them-directly-from-the-frontend-no-backend-image-serving",
+      "featureTitle": "Add the specified visual elements to the page using generated static images: (1) hero imagery (3D wireframe/render of a translucent blue prosthetic hand showing internal tubing), (2) use-case illustration (man in a workshop struggling to lift a box with one hand), and (3) component detail (photo-like image of physical prototype with silicone hand connected to an air pump and wiring). Store and serve these as static assets from frontend/public/assets/generated and reference them directly from the frontend (no backend image serving).",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

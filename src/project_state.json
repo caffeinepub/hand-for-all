@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Website/landing page header section for HAND FOR ALL (HOF - Hand For All) prosthetic soft-robotic hand project, including hero content, key features, how-it-works summary, applications, and contact info with specified visual style.",
+  "architectural_notes": [
+    "Visual design: dark charcoal/black background, white text, light blue/cyan accents.",
+    "Header content must include: brand name (HAND FOR ALL), logo text (HOF - Hand For All), title, tagline, key features, how-it-works, applications, and contact info."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- 3D wireframe/render of a translucent cyan-blue prosthetic hand showing internal tubing on a dark background (hof-hero-hand.dim_1600x900.png)\n- Workshop illustration of a man struggling to lift a box with one hand; industrial workshop environment; dark tone with cyan highlights (hof-usecase-workshop.dim_1400x900.png)\n- Photo-like prototype detail: silicone prosthetic hand connected to an air pump with visible tubing and wiring on a neutral/dark surface (hof-prototype-detail.dim_1400x900.png)",
+  "existing_features": [
+    {
+      "id": "feature-build-a-responsive-landing-page-header-hero-section-for-the-hand-for-all-project-using-the-provided-copy-brand-name-hand-for-all-logo-text-hof-hand-for-all-main-title-prosthetic-hand-using-soft-robots-and-tagline-innovating-human-capability-with-soft-robotics",
+      "title": "Build a responsive landing page header/hero section for the “HAND FOR ALL” project using the provided copy: brand name “HAND FOR ALL”, logo text “HOF - Hand For All”, main title “Prosthetic Hand Using Soft Robots”, and tagline “Innovating Human Capability with Soft Robotics”.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-key-features-section-displaying-the-six-provided-feature-items-and-their-descriptions-natural-movement-ergonomics-mechanism-customization-impact-tech-stack-arduino",
+      "title": "Add a “Key Features” section displaying the six provided feature items and their descriptions: Natural Movement, Ergonomics, Mechanism, Customization, Impact, Tech Stack (Arduino).",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-how-it-works-section-containing-the-provided-explanation-of-the-air-pump-silicone-tubes-arduino-control",
+      "title": "Add a “How It Works” section containing the provided explanation of the air pump + silicone tubes + Arduino control.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-an-applications-section-listing-medical-rehab-assistive-tech-and-r-d-research-and-development",
+      "title": "Add an “Applications” section listing: Medical Rehab, Assistive Tech, and R&D (Research and Development).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-contact-section-showing-the-team-contact-email-and-both-phone-numbers-exactly-as-provided",
+      "title": "Add a “Contact” section showing the team contact email and both phone numbers exactly as provided.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-consistent-visual-design-across-the-landing-page-using-the-specified-palette-dark-charcoal-black-background-white-text-and-light-blue-cyan-accents-choose-a-coherent-typography-and-layout-style-that-fits-a-modern-soft-robotics-engineering-theme-no-blue-purple-dominant-theme",
+      "title": "Apply a consistent visual design across the landing page using the specified palette: dark charcoal/black background, white text, and light blue/cyan accents; choose a coherent typography and layout style that fits a modern soft-robotics/engineering theme (no blue/purple-dominant theme).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-specified-visual-elements-to-the-page-using-generated-static-images-1-hero-imagery-3d-wireframe-render-of-a-translucent-blue-prosthetic-hand-showing-internal-tubing-2-use-case-illustration-man-in-a-workshop-struggling-to-lift-a-box-with-one-hand-and-3-component-detail-photo-like-image-of-physical-prototype-with-silicone-hand-connected-to-an-air-pump-and-wiring-store-and-serve-these-as-static-assets-from-frontend-public-assets-generated-and-reference-them-directly-from-the-frontend-no-backend-image-serving",
+      "title": "Add the specified visual elements to the page using generated static images: (1) hero imagery (3D wireframe/render of a translucent blue prosthetic hand showing internal tubing), (2) use-case illustration (man in a workshop struggling to lift a box with one hand), and (3) component detail (photo-like image of physical prototype with silicone hand connected to an air pump and wiring). Store and serve these as static assets from frontend/public/assets/generated and reference them directly from the frontend (no backend image serving).",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create the website header/hero section for HAND FOR ALL (HOF) including brand/logo text, main title, tagline, key features, how-it-works summary, applications, and contact information, styled with dark background and cyan accents and supported by specified visuals.",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "HAND FOR ALL",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
